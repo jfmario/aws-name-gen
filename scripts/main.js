@@ -8,7 +8,7 @@ function selectRandom ( coll )
     return coll [Math.floor(Math.random()*coll.length)];
 }
 
-var language = 'pv';
+var language = 'rb';
 var languageConfig = yaml.load ( path.resolve ( __dirname, '..', 's3',
     'languages',
     language + '.yml' ) );
