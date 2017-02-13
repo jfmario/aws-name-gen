@@ -109,6 +109,7 @@ subtypes:
 types:
     anyName:
         - maleName maleName
+        - femaleName maleName
     femaleName:
         - femaleName maleName
     maleName:
