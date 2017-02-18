@@ -13,7 +13,7 @@ export class Language
 
     public getName ( typeSlug: string ): string
     {
-        
+        console.log ( typeSlug );
         var typeOptions: any = this.conf.types [typeSlug];
         var subtypeString: string = this._selectRandom ( typeOptions );
         var subtypeArray: string [] = subtypeString.split ( ' ' );
@@ -32,7 +32,7 @@ export class Language
                 var character: string = this._selectRandom (
                     this.conf.elements [element] );
                 
-                name += element;
+                name += character;
             }
 
             name = name [0].toUpperCase () + name.slice ( 1 );

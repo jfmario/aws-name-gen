@@ -3,7 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
-import { TabMenuModule } from 'primeng/primeng';
+import { ButtonModule, DropdownModule, InputTextModule,
+  TabMenuModule } from 'primeng/primeng';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home.component';
@@ -26,6 +27,9 @@ const appRoutes: Routes = [
     FormsModule,
     HttpModule,
     RouterModule.forRoot ( appRoutes ),
+    ButtonModule,
+    DropdownModule,
+    InputTextModule,
     TabMenuModule
   ],
   providers: [ LanguageService ],

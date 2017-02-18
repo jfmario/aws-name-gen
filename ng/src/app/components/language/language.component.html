@@ -1,6 +1,30 @@
-
-Ok
-
 <div *ngIf="isReady">
+
+    <h3 class="first">{{ language.conf.languageName }}</h3>
+
     <p>{{ language.conf.description }}</p>
+
+    <h4 class="first">Name Type</h4>
+
+    <p-dropdown [options]="options" [(ngModel)]="selectedOption"></p-dropdown>
+
+    <br />
+
+    <h4 class="first">Amount</h4>
+
+    <input type="number" [(ngModel)]="amount" pInputText />
+
+    <br />
+    <br />
+
+    <button label="Generate" type="button" (click)="generateNames()" [disabled]="!selectedOption" pButton></button>
+
+    <br />
+
+    <div *ngIf="currentNames.length>0">
+        
+        <h4 class="first">Names</h4>
+
+        <p *ngFor="let name of currentNames">{{ name }}</p>
+    </div>
 </div>
