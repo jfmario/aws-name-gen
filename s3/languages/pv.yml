@@ -1,0 +1,98 @@
+description: |
+    "**Pavach** is a language."
+elements:
+    c:
+        - m 
+        - 'n' 
+        - ng 
+        - p 
+        - b 
+        - t 
+        - d 
+        - k
+        - g 
+        - kk 
+        - gg
+        - s 
+        - z
+        - sh
+        - zh
+        - f 
+        - v 
+        - th
+        - dh
+        - kh
+        - gh
+        - ch 
+        - j 
+        - h 
+        - hh 
+        - w 
+        - r 
+        - rr 
+        - l 
+        - 'y'
+        - ts 
+        - dz
+        - tsh
+        - dzh
+        - tch
+        - dj
+        - tl
+        - dr
+        - mr
+        - nl
+        - "'"
+    v:
+        - i 
+        - a 
+        - u
+        - ii
+        - aa
+        - uu 
+        - e 
+        - oo
+        - o 
+        - ie
+        - ei
+        - ai
+        - ou
+        - oi
+        - e
+elementTypes:
+    c: Consonant
+    v: Vowel
+languageName: Pavach
+options:
+    - name: Any Name
+      slug: anyName
+    - name: Male Name
+      slug: maleName
+    - name: Female Name
+      slug: femaleName
+subtypes:
+    femaleName:
+        - cvcv
+        - cvccv
+        - cvcvcv
+        - cvcvccv
+        - cvccvcv
+        - cvccvccv
+    lastName:
+        - cvcvc
+        - cvccv
+    maleName:
+        - cvcvc
+        - cvccvc
+        - cvcvcvc
+        - cvcvccvc
+        - cvccvcvc
+        - cvccvccvc
+types:
+    anyName:
+        - maleName lastName
+        - femaleName lastName
+    femaleName:
+        - femaleName lastName
+    maleName:
+        - maleName lastName
