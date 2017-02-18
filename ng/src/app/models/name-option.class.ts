@@ -2,8 +2,8 @@
 export class NameOption
 {
 
-    public name: String;
-    public slug: String;
+    public name: string;
+    public slug: string;
 
     constructor () {}
 }

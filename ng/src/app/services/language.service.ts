@@ -15,6 +15,14 @@ export class LanguageService
     
     constructor ( private http: Http ) {}
 
+    public getLanguage ( languageSlug: string ): Promise<Language>
+    {
+        return this.http.get ( this._url + 'languages/' + languageSlug +
+            '.json' ).toPromise ().then ( res => {
+                var data = res.json ();
+                return new Language ( data );
+            });
+    }
     public getLanguageOptions (): Promise <NameOption[]>
     {
         return this.http.get ( this._url + 'languages.json' ).toPromise ()
