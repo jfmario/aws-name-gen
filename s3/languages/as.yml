@@ -1,0 +1,60 @@
+
+description: |
+    Asani is a language.
+elements:
+    c:
+        - ''
+        - k
+        - g 
+        - s 
+        - ch
+        - z
+        - dj
+        - t 
+        - ts 
+        - d
+        - 'n'
+        - h 
+        - p 
+        - b
+        - m 
+        - j 
+        - r 
+        - sh
+        - w
+    y:
+        - 'y'
+    k:
+        - k
+    v:
+        - a 
+        - i 
+        - e 
+        - o 
+        - u
+        - an 
+        - in
+        - 'on'
+elementTypes:
+    c: Consonant
+    y: Literal Y 
+    k: Literal K
+    v: Vowel
+languageName: Asani
+options:
+    - name: Name 
+      slug: anyName
+subtypes:
+    syl:
+        - v 
+        - yv
+        - cv
+        - cyv
+        - vk
+types:
+    anyName:
+        - syl
+        - syl syl
+        - syl syl syl
+        - syl syl syl syl
+        - syl syl syl syl

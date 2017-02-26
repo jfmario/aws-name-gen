@@ -6,6 +6,7 @@ var yaml = require ( 'yamljs' );
 var YAML_FILES = [
     path.resolve ( __dirname, '..', 's3', 'languages.yml' ),
     path.resolve ( __dirname, '..', 's3', 'languages', 'pv.yml' ),
+    path.resolve ( __dirname, '..', 's3', 'languages', 'as.yml' ),
     path.resolve ( __dirname, '..', 's3', 'languages', 'rb.yml' )
 ];
 
